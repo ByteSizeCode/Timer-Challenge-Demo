@@ -68,7 +68,8 @@ int main() {
     const int NUM_QUESTIONS_TO_ASK = 5;
     
     //Input difficulty level
-    while (difficulty != 'e' && difficulty !=  'm' && difficulty != 'h') {
+    while (difficulty != 'e' && difficulty !=  'm' 
+           && difficulty != 'h') {
         cout << "Please Select " << endl
              << "Easy, Medium, or Hard (e, m, h):"
              << endl;
@@ -115,7 +116,8 @@ int main() {
     this_thread::sleep_for (chrono::seconds(1));
     
     //Code for rounds
-    for(int numProblemsGiven = 0; numProblemsGiven < NUM_QUESTIONS_TO_ASK; numProblemsGiven++) {
+    for(int numProblemsGiven = 0; 
+        numProblemsGiven < NUM_QUESTIONS_TO_ASK; numProblemsGiven++) {
         
         correctString = GenerateRandomString();
         
